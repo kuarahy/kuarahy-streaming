@@ -15,5 +15,6 @@ React FrontEnd, Go Lang Back End, all around awesomeness 😎🚀
 [ ] Question: Am I using NSIS Installer for Windows? Are we releasing this for macOS in 1.0? </br>
 
 ## For Developers only
+https://dev.twitch.tv/docs/api/get-started/
 https://dev.twitch.tv for API and App info
-
+https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/
