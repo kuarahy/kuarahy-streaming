@@ -10,21 +10,28 @@ If you ever streamed from any service, the notification system is usually unreli
 
 ## ToDo
 
-[ ] React Installation </br>
+[X] React Installation </br>
 [ ] API Secret Testing </br>
 [ ] Question: do we even need a client secret since this is all local? </br>
-[ ] React FrontEnd </br>
+[X] React FrontEnd </br>
 [ ] Sound Config component </br>
-[ ] GoReleaser Config for packaging </br>
+[X] GoReleaser Config for packaging </br>
 [ ] Question: Am I using NSIS Installer for Windows? Are we releasing this for macOS in 1.0? </br>
 
 ## For Developers only
 https://dev.twitch.tv/docs/api/get-started/
 https://dev.twitch.tv for API and App info
-<<<<<<< HEAD
 https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/
 
 npm run dev to run Vite (h + enter to open local server; localhost:5173 is mine, you can change it!)
-=======
-https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/ (if you want or need a minimum sense of authentication)
->>>>>>> bdf5635f49994257a93e078733be34b4769b1e99
+
+## Developer Notes
+Do NOT run npm init in the project root (unless you need a root-level package.json for scripts).
+Keep node_modules confined to /frontend (it’s heavy and unnecessary elsewhere).
+Go and React communicate via API (e.g., Go serves React’s built files in production).
+Separation of concerns: Go (backend) and React (frontend) are decoupled.
+Cleaner builds: No node_modules pollution in the Go project.
+Easier deployment: React builds to static files, which Go serves.
+
+## Build React
+cd frontend && npm run build

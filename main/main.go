@@ -9,6 +9,9 @@ import (
 )
 
 func main() {
+	// Vite
+	fs := http.FileServer(http.Dir("./frontend/dist")) // Vite
+
 	// config
 	cfg, err := config.Load()
 	if err != nil {
