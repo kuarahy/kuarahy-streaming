@@ -1,0 +1,35 @@
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    flags: -trimpath
+    ldflags: -s -w -X main.version={{.Version}}
+
+archives:
+  - format: binary
+    name_template: "twitch-notifier_{{.Os}}_{{.Arch}}"
+
+nfpms:
+  - vendor: "Twitch Notifier"
+    homepage: "https://github.com/yourusername/twitch-notifier"
+    maintainer: "Your Name <your@email.com>"
+    description: "Twitch event notifier for OBS"
+    license: "MIT"
+    formats:
+      - deb
+      - rpm
+
+snapshot:
+  name_template: "{{ .Tag }}-next"
+
+chocolatey:
+  name: twitch-notifier
+  description: "Twitch event notifier for OBS"
+  homepage: "https://github.com/yourusername/twitch-notifier"
+  license: "MIT"

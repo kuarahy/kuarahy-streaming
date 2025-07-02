@@ -3,6 +3,7 @@ A local notification system for streamers
 
 # Stack
 React FrontEnd, Go Lang Back End, all around awesomeness 😎🚀
+Vite to facilitate Go Lang and React communication
 
 ## ToDo
 
@@ -18,3 +19,5 @@ React FrontEnd, Go Lang Back End, all around awesomeness 😎🚀
 https://dev.twitch.tv/docs/api/get-started/
 https://dev.twitch.tv for API and App info
 https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/
+
+npm run dev to run Vite (h + enter to open local server; localhost:5173 is mine, you can change it!)
