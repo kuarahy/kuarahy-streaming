@@ -5,6 +5,9 @@ A local notification system for streamers
 React FrontEnd, Go Lang Back End, all around awesomeness 😎🚀
 Vite to facilitate Go Lang and React communication
 
+## The Problem
+If you ever streamed from any service, the notification system is usually unreliable. That is related to server latency, service latency, or others. By cutting out the parts of the system that aren't interesting for a streamer, this alleviates that and simplifies the process. You won't need to login to a service for it, no bloated software, no advertisement, no platform. You use a neat little frontend browser locally installed for you to setup your notifications, and that's it.
+
 ## ToDo
 
 [ ] React Installation </br>
@@ -18,6 +21,10 @@ Vite to facilitate Go Lang and React communication
 ## For Developers only
 https://dev.twitch.tv/docs/api/get-started/
 https://dev.twitch.tv for API and App info
+<<<<<<< HEAD
 https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/
 
 npm run dev to run Vite (h + enter to open local server; localhost:5173 is mine, you can change it!)
+=======
+https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/ (if you want or need a minimum sense of authentication)
+>>>>>>> bdf5635f49994257a93e078733be34b4769b1e99
