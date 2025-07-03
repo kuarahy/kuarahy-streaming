@@ -7,6 +7,8 @@ import (
 	"log"
 	"net/http"
 
+	"./internal/config"
+
 	"github.com/nicklaw5/helix/v2"
 )
 

@@ -3,9 +3,10 @@ package main
 import (
 	"log"
 	"net/http"
-	"twitch-notifier/internal/api"
-	"twitch-notifier/internal/config"
-	"twitch-notifier/internat/eventsub"
+
+	"./internal/api"
+	"./internal/config"
+	"./internal/eventsub"
 )
 
 func main() {
