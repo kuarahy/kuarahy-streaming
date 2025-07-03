@@ -2,7 +2,7 @@
 A local notification system for streamers
 
 # Stack
-React FrontEnd, Go Lang Back End, all around awesomeness 😎🚀
+React FrontEnd, Go Lang Back End, all around awesomeness 😎🚀 </br>
 Vite to facilitate Go Lang and React communication
 
 ## The Problem
