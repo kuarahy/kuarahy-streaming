@@ -9,8 +9,19 @@ import (
 )
 
 func main() {
-	// Vite
-	fs := http.FileServer(http.Dir("./frontend/dist")) // Vite
+	// ===== Serve React static files go here =====
+	// For Vite:
+	fs := http.FileServer(http.Dir("./frontend/dist"))
+
+	http.Handle("/", fs) // Serves index.html for all unmatched routes
+
+	// ===== API routes go here =====
+	http.HandleFunc("/api/events", handleEvents)
+	http.HandleFunc("/api/config", handleConfig)
+
+	// ===== (3) Start the server =====
+	log.Println("Server starting on :5173...") // Go API is under 7777, don't get confused
+	log.Fatal(http.ListenAndServe(":5173", nil))
 
 	// config
 	cfg, err := config.Load()
