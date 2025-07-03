@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"./internal/api"
-	"./internal/config"
-	"./internal/eventsub"
+	"./internal/api/api"
+	"./internal/config/config"
+	"./internal/eventsub/eventsub"
 )
 
 func main() {
